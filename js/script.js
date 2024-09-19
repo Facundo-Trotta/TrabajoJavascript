@@ -19,11 +19,11 @@ console.log ("en nuestra comision yo te estare invitando a participar de nuestro
 
 
 //primer test con switch
-let tiempo = prompt("Bienvenido has entrado a un mini test sobre la cual tu puedes elejir unas opciones de que harias cuando te enfermas: (ir a un medico) , (tratar los malestares solo) o (dejar que te cures con el tiempo) ");
+let tiempo = prompt("Bienvenido has entrado a un mini test sobre la cual tu puedes elejir unas opciones de que harias cuando te enfermas: (ir a un medico) , (tratar los malestares solo) o (dejar que te cures con el tiempo) ")
 
 switch (tiempo) {
     case "ir a un medico":
-        alert("Bien Hecho!! Aveces el querer curarte solo podria traer muchos riesgos a tu salud");
+        alert("Bien Hecho!! Aveces el querer curarte solo podria traer muchos riesgos a tu salud")
         console.log ("Bien Hecho!! Aveces el querer curarte solo podria traer muchos riesgos a tu salud")
         break;
     
