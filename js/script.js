@@ -13,28 +13,29 @@ let division = prompt ("ahora, queriamos saber que contenido de coderhouse es el
 const academia = ("coderHouse")
 alert ("Bienvindo!, estas en la comision " +comision+ " de la academia " +academia+" cursando "+division)
 console.log ("Bienvindo!, estas en la comision " +comision+ " de la academia " +academia+" cursando "+division)
-alert ("en nuestra comision yo te estare invitando a participar de nuestro test donde se buscara mostrar lo aprendido y que se teste todo tipo de herramientas asi que ojala que disfrutes mi trabajo")
-console.log ("en nuestra comision yo te estare invitando a participar de nuestro test donde se buscara mostrar lo aprendido y que se teste todo tipo de herramientas asi que ojala que disfrutes mi trabajo")
+alert ("Mucho gusto espero que difrutes de nuestro test sobre un juego llamado THE LAST OF US sobre cuanto sabes acerca de este juegazo estrenado el 14 de julio del 2003 donde se buscara mostrar todo los codigos aprendidos, usados de distintas formas pero buscando que se utilicen para el fin de hacer el test")
+
+console.log ("Mucho gusto espero que difrutes de nuestro test sobre un juego llamado THE LAST OF US sobre cuanto sabes acerca de este juegazo estrenado el 14 de julio del 2003 donde se buscara mostrar todo los codigos aprendidos, usados de distintas formas pero buscando que se utilicen para el fin de hacer el test")
 
 
 
 //primer test con switch
-let tiempo = prompt("Bienvenido has entrado a un mini test sobre la cual tu puedes elejir unas opciones de que harias cuando te enfermas: (ir a un medico) , (tratar los malestares solo) o (dejar que te cures con el tiempo) ")
+let ruido = prompt("como primera pregunta ¿queria saber que harias si escucharas un chasqueador acercandose? = 1 (abrir fuego sobre el) 2 (salir corriendo por mi vida) 3(haria ruido con cualquier cosa en la mano y me retiraria lentamente)")
 
-switch (tiempo) {
-    case "ir a un medico":
-        alert("Bien Hecho!! Aveces el querer curarte solo podria traer muchos riesgos a tu salud")
-        console.log ("Bien Hecho!! Aveces el querer curarte solo podria traer muchos riesgos a tu salud")
+switch (ruido) {
+    case "1":
+        alert("Mal hecho, porque podras hacer que todo los infectado cerca de la zona vayan a tu localidad donde aveces uno puedo escapar pero no en todo los casos porque no se saben cuantos ni que tan cerca estan y puede ser letal")
+        console.log ("Mal hecho, porque podras hacer que todo los infectado cerca de la zona vayan a tu localidad donde aveces uno puedo escapar pero no en todo los casos porque no se saben cuantos ni que tan cerca estan y puede ser letal")
         break;
     
-    case "tratar los malestares solo":
-        alert("Mal porque aun no sabes lo que tienes y aveces eso podria o traer repercuciones que con el tiempo pasando te podria hacer peor, por eso es mejor ir al medico y consultar con un especialista con el tema")
-        console.log ("Mal porque aun no sabes lo que tienes y aveces eso podria o traer repercuciones que con el tiempo pasando te podria hacer peor, por eso es mejor ir al medico y consultar con un especialista con el tema")
+    case "2":
+        alert("Mal hecho, porque aunque los chasqueadores no tenga vista ellos tienen uno de sus sentidos mucho mas desarrollados que es el escuchar y la ecolocalizacion")
+        console.log ("Mal hecho, porque aunque los chasqueadores no tenga vista ellos tienen uno de sus sentidos mucho mas desarrollados que es el escuchar y la ecolocalizacion ")
         break;
 
-    case "dejar que te cures con el tiempo":
-        alert("Mal porque aun no sabes lo que tienes y aveces eso podria o traer repercuciones que con el tiempo pasando te podria hacer peor, por eso es mejor ir al medico y consultar con un especialista con el tema")
-        console.log ("Mal porque aun no sabes lo que tienes y aveces eso podria o traer repercuciones que con el tiempo pasando te podria hacer peor, por eso es mejor ir al medico y consultar con un especialista con el tema")
+    case "3":
+        alert("Bien hecho, tirando un objeto que no haga tanto ruido puedes cambiar las trayectorias de los chasqueadores y pasar de ellos")
+        console.log ("Bien hecho, tirando un objeto que no haga tanto ruido puedes cambiar las trayectorias de los chasqueadores y pasar de ellos ")
         break;
 
     default:
@@ -43,41 +44,140 @@ switch (tiempo) {
         break;
 }
 
-//segundo test con if- else y else if
-let canilla = prompt ("como segunda pregunta, queria saber si sabias del desperdicio de agua y charcos de agua estancada que hace que en estos veranos se padezca las oleadas de mosquitos,¿vos dejas (abierto) o (cerrado) la canilla de agua?")
-if (canilla == "cerrado"){
-    alert ("Felicidades! no solo cuidas al medio ambiente sino que tambien tienes consiencia por los demas y no solo en uno")
-    console.log ("Felicidades! no solo cuidas al medio ambiente sino que tambien tienes consiencia por los demas y no solo en uno")
-}else if (canilla == "abierto"){
-    alert ("Mal aveces tenemos que tener conciencia en que cuidar el agua no es solo pensar en uno sino que tambien en los demas que tambien en los demas")
-    console.log ("Mal aveces tenemos que tener conciencia en que cuidar el agua no es solo pensar en uno sino que tambien en los demas que tambien en los demas")
+//segundo test con if- else y else if 
+let aire = prompt ("como segunda pregunta ¿si tu camino contiene esporas las pasarias sin tener una mascara de gas ?= 1(si) 2(no)")
+if (aire == 1 ){
+    alert ("Mal hecho, porque las esporas aunque parezcan inofencivas harian que te infectes con el virus")
+    console.log ("Mal hecho, porque las esporas aunque parezcan inofencivas harian que te infectes con el virus")
+}else if (aire == 2 ){
+    alert ("Bien hecho, porque las esporas podrian hacer que te infectes con el virus")
+    console.log ("Bien hecho, porque las esporas podrian hacer que te infectes con el virus")
+
 }
 
-//tercer test con switch case
-let menu = parseInt(prompt("Ingresa uno de los tres numeros para saber tu opinion acerca del test!! ingrese la opcion 1 si te va gustando el test, ingrese 2 si no te gusta el test, ingrese 3 si solo quieres seguir para ver si al final te interesa  "))
+//tercer test con switch case con  parseInt
+let menu = parseInt(prompt("Tercera pregunta ¿como se llama el virus del hongo que da comienzo a la pandemia mundial? 1(Cordycep) 2(peste negra) 3(gripe A)"))
 
 switch (menu) {
     case 1:
-        alert ("Gracias, espero que sigas disfrutando de este pequeño test que siga mejorando.")
-      console.log ("Gracias, espero que sigas disfrutando de este pequeño test que siga mejorando.")
+        alert ("Correcto se llama Cordycep")
+      console.log ("Correcto se llama Cordycep")
       break
     case 2:
-        alert ("Gracias por tu opinion sincera y que esto no decaiga :D que aun queda mucho por mejorar")
-        console.log ("Gracias por tu opinion sincera y que esto no decaiga :D que aun queda mucho por mejorar")
+        alert ("Incorrecto, se llama Cordycep")
+        console.log ("Incorrecto, se llama Cordycep")
         break
     case 3:
-        alert ("Gracias por darme este chanse de seguir mostrandote y mejorando este test ")
-        console.log ("Gracias por darme este chanse de seguir mostrandote y mejorando este test ")
-        break   
+        alert ("Incorrecto, se llama Cordycep")
+        console.log ("Incorrecto, se llama Cordycep")
+        break 
+
+    default:
+        alert("introdujiste una opcion no valida")
+        console.log ("introdujiste una opcion no valida")
+        break; 
 }
 
-//cuarto test usando las flechita =>
-alert ("tambien le queriamos contar la cantidad tambien de personas que estan pasando por este test")
-const calculadoraDel2 = primerNumero => primerNumero*5
-    alert (calculadoraDel2(10))
-    alert ("50 son las personas que pasaron y dieron su opinion de este mini progreso que va a seguir avansando")
-    console.log ("50 son las personas que pasaron y dieron su opinion de este mini progreso que va a seguir avansando")
+//cuarto test usando arrys
+const personajesN = [" Joel","Ellie","Tess","Sarah","tommy", "bill",]
+let personajes = prompt("¿quien es el personaje mas querido de la fraquin segun vos? joel, ellie, tess, sarah, tommy, bill")
+console.log("quien es el personaje mas querido de la fraquin segun vos"+personajesN.join(" - "))
+
+switch (personajes) {
+    case "joel":
+    alert ("Incorrecto, el personaje mas amado por escandalo en la fraquincia es Ellie")
+    console.log ("Incorrecto, el personaje mas amado por escandalo en la fraquincia es Ellie")
+    break
+
+    case "ellie":
+    alert ("Correcto el personaje mas amado por escandalo en la fraquincia es Ellie")
+    console.log ("Correcto el personaje mas amado por escandalo en la fraquincia es Ellie")
+    break
+
+    case "tess":
+    alert ("Incorrecto, el personaje mas amado por escandalo en la fraquincia es Ellie")
+    console.log ("Incorrecto, el personaje mas amado por escandalo en la fraquincia es Ellie")
+    break
+
+    case "sarah":
+    alert ("Incorrecto, el personaje mas amado por escandalo en la fraquincia es Ellie")
+    console.log ("Incorrecto, el personaje mas amado por escandalo en la fraquincia es Ellie")
+    break
+
+    case "tommy":
+    alert ("Incorrecto, el personaje mas amado por escandalo en la fraquincia es Ellie")
+    console.log ("Incorrecto, el personaje mas amado por escandalo en la fraquincia es Ellie")
+    break
+
+    case "bill":
+    alert ("Incorrecto, el personaje mas amado por escandalo en la fraquincia es Ellie")
+    console.log ("Incorrecto, el personaje mas amado por escandalo en la fraquincia es Ellie")
+    break
+
+    default:
+        alert("introdujiste una opcion no valida")
+        console.log ("introdujiste una opcion no valida")
+        break; 
+}
+
+
 
 //quinto test 
+let hermanos = prompt("quinta pregunta ¿como se llamaba la pareja de hermanos que se encuentran ellie y joel en su viaje? 1(David y Jacob) 2(Henry y Sam) 3(Tommy y Brian)")
+
+switch (hermanos) {
+    case "1":
+        alert("Incorrecto, se llamaban Henry y Sam")
+        console.log ("Incorrecto, se llamaban Henry y Sam")
+        break;
+    
+    case "2":
+        alert("Correcto se llamaban Henry y Sam")
+        console.log ("Correcto se llamaban Henry y Sam")
+        break;
+    
+    case "3":
+        alert("Incorrecto, se llamaban Henry y Sam")
+        console.log ("Incorrecto, se llamaban Henry y Sam")
+        break;
+
+
+    default:
+        alert("introdujiste una opcion no valida")
+        console.log ("introdujiste una opcion no valida")
+        break;
+}
+
+//sexto test 
+let bills = prompt("¿como se llamaba la ciudad de bill? 1(Boston) 2(Massachusetts) 3(Lincoln)")
+
+switch (bills) {
+    case "1":
+        alert("Incorrecto, se llama Lincoln ")
+        console.log ("Incorrecto, se llama Lincoln ")
+        break;
+    
+    case "2":
+        alert("Incorrecto, se llama Lincoln ")
+        console.log ("Incorrecto, se llama Lincoln ")
+        break;
+
+    case "3":
+        alert("Bien hecho, se llama Lincoln")
+        console.log ("Bien hecho, se llama Lincoln")
+        break;
+
+    default:
+        alert("introdujiste una opcion no valida")
+        console.log ("introdujiste una opcion no valida")
+        break;
+}
+
+//septimo tets
+alert ("muchos se preguntaran cuantos supervivientes sobrevivieron del virus del Cordycep ")
+const calculadoraDel2 = primerNumero => primerNumero*4
+    alert (+calculadoraDel2(10)+"% nomas logro sobrevivir del virus del Cordicep pero se fue disminuyendo mas por temas como la comida se escasea, el encontrar agua potable ,las esporas, la matanza entre dominios entre humanos y etc")
+
+//continuara...
 alert ("espero que hayan disfrutado de este pequeño y sencillo test")
 console.log ("espero que hayan disfrutado de este pequeño y sencillo test")
