@@ -172,12 +172,40 @@ input::placeholder, textarea::placeholder {
       height: 200px;
     }
     .stocks {
+      margin: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: 2fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .stocks img {
+      width: 100%;
+      height: 300px;
       display: flex;
       flex-wrap: wrap;
+    }
+    .stocks .stocks-2 {
       text-align: center;
-      align-items: center;
+    }
+    .stocks-proximos {
+      margin: 30px;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: 1fr;
       gap: 20px;
-      
+      align-content: center;
+    }
+    .stocks-proximos img {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .stocks-proximos2 {
+      text-align: center;
+      align-content: center;
     }
     /*contactanos*/
     form {
@@ -192,7 +220,52 @@ input::placeholder, textarea::placeholder {
    }
   }
 
-
+  /*tablet*/
+  @media screen and (min-width: 768px) and (max-width: 998px) {
+    /*inicio*/
+    .d-block {
+      width: 100%;
+      height: 450px;
+    }
+    .stocks {
+      margin: 20px;
+      display: grid;
+      grid-template-columns: repeat(4, 20%);
+      grid-template-rows: 1fr;
+      gap: 35px;
+      align-content: center;
+      
+    }
+    .stocks img {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .stocks .stocks-2 {
+      text-align: center;
+    }
+    .stocks-proximos {
+      margin: 30px;
+      display: grid;
+      grid-template-columns: repeat(3, 31%);
+      grid-template-rows: 1fr;
+      gap: 20px;
+      align-content: center;
+    }
+    .stocks-proximos img {
+      width: 100%;
+      height: 70%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .stocks-proximos2 {
+      text-align: center;
+      align-content: center;
+    }
+    
+  }  
+  
   /*responsive pc*/
   @media screen and (min-width: 999px) {
     /*inicio*/
@@ -225,6 +298,7 @@ input::placeholder, textarea::placeholder {
       grid-template-rows: 1fr;
       gap: 30px;
       align-content: center;
+      margin-bottom: 30px;
     }
     .stocks-proximos img {
       width: 100%;
@@ -235,6 +309,7 @@ input::placeholder, textarea::placeholder {
     .stocks-proximos2 {
       text-align: center;
       align-content: center;
+      
     }
     
   }
