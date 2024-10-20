@@ -172,10 +172,10 @@ input::placeholder, textarea::placeholder {
       height: 200px;
     }
     .stocks {
-      margin: 20px;
+
       display: grid;
-      grid-template-columns: repeat(2, 50%);
-      grid-template-rows: 2fr;
+      grid-template-columns: repeat(2, 45%);
+      grid-template-rows: 1fr;
       gap: 40px;
       align-items: center;
     }
@@ -189,11 +189,10 @@ input::placeholder, textarea::placeholder {
       text-align: center;
     }
     .stocks-proximos {
-      margin: 30px;
       display: grid;
-      grid-template-columns: repeat(2, 50%);
+      grid-template-columns: repeat(2, 45%);
       grid-template-rows: 1fr;
-      gap: 20px;
+      gap: 40px;
       align-content: center;
     }
     .stocks-proximos img {
