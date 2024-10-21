@@ -8,253 +8,69 @@
   font-weight: 400;
   font-style: normal;
 }
-h1, h2, h3, h4, h5, h6, p, .btn {
+h1, h2, h3, h4, li {
   font-family: "LXGW WenKai Mono TC", monospace;
   font-weight: 400;
   font-style: normal;
 
+}
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+}
+.nav-link {
+  font-family: "LXGW WenKai Mono TC", monospace;
+  font-weight: 50px;
+  font-style: normal;
 }
 
 /*inicio*/
 
 .titulofondo {
-  font-size: 30px;
-  text-align: center;
-  color: #bbbbbb;
-  background-color: #3a3939;
-}
-.p-inicio {
-  font-size: 30px;
-  font-family: "LXGW WenKai Mono TC", monospace;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-}
-/* Estilos para la Sección de Productos */
-#productos {
-  margin: 20px 0;
-  text-align: center;
-}
-
-#productos h2 {
-  font-size: 2rem;
-  color: #007bff;
-}
-
-.productos-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.producto-card {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  width: 250px;
-  text-align: center;
-  transition: transform 0.3s ease-in-out;
-}
-
-.producto-card:hover {
-  transform: scale(1.05);
-}
-
-.producto-card img {
-  width: 100%;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.producto-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.producto-card p {
-  font-size: 1rem;
-  margin-bottom: 10px;
-  color: #666;
-}
-
-.producto-card button {
-  background-color: #28a745;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-}
-
-.producto-card button:hover {
-  background-color: #218838;
-}
-
-/* Estilos para el Carrito */
-#carrito {
-  margin: 20px 0;
-  text-align: center;
-}
-
-#carrito h2 {
-  font-size: 2rem;
-  color: #007bff;
-}
-
-.carrito-container {
-  background-color: white;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.carrito-info {
-  font-size: 1.2rem;
-}
-
-#vaciar-carrito, #comprar-carrito {
-  background-color: #dc3545;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-right: 10px;
-  transition: background-color 0.3s;
-}
-
-#vaciar-carrito:hover, #comprar-carrito:hover {
-  background-color: #c82333;
-}
-
-#comprar-carrito {
-  background-color: #28a745;
-}
-
-#comprar-carrito:hover {
-  background-color: #218838;
-}
-
-/* Estilos para el Formulario */
-#datos-personales {
-  margin: 20px 0;
-  text-align: center;
-}
-
-#datos-personales h2 {
-  font-size: 2rem;
-  color: #007bff;
-}
-
-#form-datos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-#form-datos input {
-  width: 300px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-#form-datos button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-#form-datos button:hover {
-  background-color: #0056b3;
-}
-/*contactanos*/
-.formulario {
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #248a60;
-} 
-form {
-    padding: 50px 55px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.907);
-    border-radius: 20px;
+    font-size: 30px;
     text-align: center;
-    width: 400px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: #111;
-}
-.input-group {
-    display: flex;
-    flex-direction: column;
-    text-align: left;   
-}
-.titulo-formulario {
-    color: #ffffff;
-    font-size: 35px;
-    text-align: center;
-}
-label {
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-input, textarea {
-    padding: 17px 25px;
-    border-radius: 25px;
-    margin-bottom: 20px;
-    background-color: #edfff0;
-    border: 2px solid #f0faf1;
-    color: #283629;
-    outline: none;
-}
-input::placeholder, textarea::placeholder {
-    color: #b5cab6;
-}
-.form-txt {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-.form-txt a {
     color: #bbbbbb;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-}
-.btnt {
+    background-color: #3a3939;
+  }
+  .p-inicio {
+    font-size: 30px;
     font-family: "LXGW WenKai Mono TC", monospace;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
-    color: #ffffff;
-    border: 0;
-    border-radius: 25px;
-    background-color: #51d94c;
-    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
-    cursor: pointer;
-}
-.btnt:hover {
-    background-color: #50e04b;
-}
+    text-align: center;
+  }
+  .productos-container, .container {
+    display: grid;
+    grid-template-columns: repeat(4,24%);
+  }
+  .card, .cardCompra {
+    gap: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    align-content: center;
+  }
+  .card:hover, .cardCompra:hover {
+    transform: scale(1.05);
+  }
+  .card img, .carrito-content img {
+    margin: 10%;
+    width: 40%;
+    height: 80%;
 
+  }
+  .add-cart {
+    background-color: #111;
+    color: rgb(221, 221, 226);
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+  }
+  .eliminar-item {
+    background-color: red;
+    color: #ffffff;
+  }
 /*footer*/
 .footer {
     width: 100%;
@@ -310,153 +126,4 @@ input::placeholder, textarea::placeholder {
   .footer .container-footer .footer-row .social-links:hover {
     color: #ffffff;
     padding-left: 6px;
-  }
-
-  /*responsive mobile*/
-  @media screen and (max-width: 767px) {
-    /*inicio*/
-    .d-block {
-      width: 100%;
-      height: 200px;
-    }
-    .stocks {
-
-      display: grid;
-      grid-template-columns: repeat(2, 45%);
-      grid-template-rows: 1fr;
-      gap: 40px;
-      align-items: center;
-    }
-    .stocks img {
-      width: 100%;
-      height: 300px;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .stocks .stocks-2 {
-      text-align: center;
-    }
-    .stocks-proximos {
-      display: grid;
-      grid-template-columns: repeat(2, 45%);
-      grid-template-rows: 1fr;
-      gap: 40px;
-      align-content: center;
-    }
-    .stocks-proximos img {
-      width: 100%;
-      height: 300px;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    
-    .stocks-proximos2 {
-      text-align: center;
-      align-content: center;
-    }
-    /*contactanos*/
-    form {
-      padding: 50px 30px;
-      width: 100%;
-    }
-    input {
-      padding: 15px;
-    }
-   .titulo-formulario {
-    padding: 30px;
-   }
-  }
-
-  /*tablet*/
-  @media screen and (min-width: 768px) and (max-width: 998px) {
-    /*inicio*/
-    .d-block {
-      width: 100%;
-      height: 450px;
-    }
-    .stocks {
-      margin: 20px;
-      display: grid;
-      grid-template-columns: repeat(4, 20%);
-      grid-template-rows: 1fr;
-      gap: 35px;
-      align-content: center;
-      
-    }
-    .stocks img {
-      width: 100%;
-      height: 80%;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .stocks .stocks-2 {
-      text-align: center;
-    }
-    .stocks-proximos {
-      margin: 30px;
-      display: grid;
-      grid-template-columns: repeat(3, 31%);
-      grid-template-rows: 1fr;
-      gap: 20px;
-      align-content: center;
-    }
-    .stocks-proximos img {
-      width: 100%;
-      height: 70%;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .stocks-proximos2 {
-      text-align: center;
-      align-content: center;
-    }
-    
-  }  
-  
-  /*responsive pc*/
-  @media screen and (min-width: 999px) {
-    /*inicio*/
-    .d-block {
-      width: 100%;
-      height: 450px;
-    }
-    .stocks {
-      margin: 20px;
-      display: grid;
-      grid-template-columns: repeat(4, 23%);
-      grid-template-rows: 1fr;
-      gap: 35px;
-      align-content: center;
-      
-    }
-    .stocks img {
-      width: 100%;
-      height: 80%;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .stocks .stocks-2 {
-      text-align: center;
-    }
-    .stocks-proximos {
-      margin: 20px;
-      display: grid;
-      grid-template-columns: repeat(3, 31%);
-      grid-template-rows: 1fr;
-      gap: 30px;
-      align-content: center;
-      margin-bottom: 30px;
-    }
-    .stocks-proximos img {
-      width: 100%;
-      height: 70%;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .stocks-proximos2 {
-      text-align: center;
-      align-content: center;
-      
-    }
-    
   }

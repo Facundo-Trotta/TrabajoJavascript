@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -10,41 +10,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
    <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+    <!--html-->
+    <link rel="stylesheet" href="page/carrito.html">
     <!--css-->
     <link rel="stylesheet" href="css/styles.css">
-    <!--html-->
-    <link rel="stylesheet" href="pages/productos.html">
-    <link rel="stylesheet" href="pages/contactanos.html">
+    <!--js-->
+    <script defer src="./js/script.js"></script>
     <!--titulo-->
     <link rel="icon" type="img/jpg" href="img/logo.jpg">
     <title>King of Servis.Inicio</title>
-</head>
-<body>
-    <!--header-->
+  </head>
+  <body>
+    <!--navbar-->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="img/logo.jpg" alt="Bootstrap" width="40" height="40"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="pages/productos.html">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/contactanos.html">Contactanos</a>
-                  </li>
-                </ul>
-              </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/logo.jpg" alt="Bootstrap" width="70" height="70"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="page/carrito.html">Carrito</a>
+                </li>
+              </ul>
             </div>
-          </nav>
-    </header>
-
+          </div>
+        </nav>
+  </header>
     <!--fondo movible -->
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
@@ -55,21 +52,12 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="img/fondos/primerfondo.png" class="d-block" alt="">
-          <div class="carousel-caption d-none d-md-block">
-            <button type="button" class="btn btn-dark"><a href="pages/productos.html">Comprar</a></button>
-          </div>
         </div>
         <div class="carousel-item">
           <img src="img/fondos/segundofondo.png" class="d-block" alt="">
-          <div class="carousel-caption d-none d-md-block">
-            <button type="button" class="btn btn-dark"><a href="pages/productos.html">Comprar</a></button>
-          </div>
         </div>
         <div class="carousel-item">
           <img src="img/fondos/tercerdondo.png" class="d-block" alt="">
-          <div class="carousel-caption d-none d-md-block">
-            <button type="button" class="btn btn-dark"><a href="pages/productos.html">Comprar</a></button>
-          </div>
         </div>          
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -81,77 +69,48 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
+    <!--titulo-->
     <div class="titulofondo">
-      <h1>Envios gratis a todo el pais</h1>
+        <h1>Envios gratis a todo el pais</h1>
     </div>
-    <!--fotos de estocks-->
     <div class="p-inicio">
-      <p>Algunos de los stocks mas comprados</p>
+        <p>Stocks Disponibles</p>
     </div>
-    <div class="stocks">
-      <div class="stocks-2">
-        <img src="img/pantalones/5.webp" alt="">
-        <button type="button" class="btn btn-dark"><a href="pages/productos.html">saber mas</a></button>
-      </div>
 
-      <div class="stocks-2">
-        <img src="img/zapatillas/1.jpg" alt="">
-        <button type="button" class="btn btn-dark"><a href="pages/productos.html">saber mas</a></button>
-      </div>
+    <!--productos-->
+    <section id="productos">
+        <div id="productos-container"></div>
+    </section>
 
-      <div class="stocks-2">
-        <img src="img/buzos/6.webp" alt="">
-        <button type="button" class="btn btn-dark"><a href="pages/productos.html">saber mas</a></button>
-      </div>
 
-      <div class="stocks-2">
-        <img src="img/remeras/3.webp" alt="">
-        <button type="button" class="btn btn-dark"><a href="pages/productos.html">saber mas</a></button>
-      </div>
-    </div>
-    <!--stocks que estaran proximamente-->
-    <div class="p-inicio">
-      <p>Proximos ingresos</p>
-    </div>
-    <div class="stocks-proximos">
-      <div class="stocks-proximos2">
-        <img src="img/stocksA/1.jpg" alt="">
-        <button type="button" class="btn btn-dark"><a href="">Proximamente </a></button>
-      </div>
-      <div class="stocks-proximos2">
-        <img src="img/stocksA/2.webp" alt="">
-        <button type="button" class="btn btn-dark"><a href="">Proximamente </a></button>
-      </div>
-      <div class="stocks-proximos2">
-        <img src="img/stocksA/3.jpg"  alt="">
-        <button type="button" class="btn btn-dark"><a href="">Proximamente </a></button>
-      </div>
-    </div>
 
     <!--footer-->
     <footer class="footer">
         <div class="container-footer">
-         <div class="footer-row">
-            <div class="footer-links">
-               <h2>compañia</h2>
-               <ul>
-                 <li>legal warning</li>
-                 <li>privacy policy</li>
-                 <li>crookies policy</li>
-                 <li>quality policy</li>
-               </ul>
+            <div class="footer-row">
+                <div class="footer-links">
+                   <h2>compañia</h2>
+                   <ul>
+                     <li>legal warning</li>
+                     <li>privacy policy</li>
+                     <li>crookies policy</li>
+                     <li>quality policy</li>
+                   </ul>
+                </div>
+                <div class="footer-links">
+                   <h2>redes</h2>
+                   <div class="social-links">
+                     <a href="https://www.instagram.com/__facuu__/"><i class="fab fa-instagram"></i></a>
+                     <a href="https://www.facebook.com/facu.kamikase.7"><i class="fab fa-facebook"></i></a>
+                   </div>
+                </div>
             </div>
-            <div class="footer-links">
-               <h2>redes</h2>
-               <div class="social-links">
-                 <a href="https://www.instagram.com/__facuu__/"><i class="fab fa-instagram"></i></a>
-                 <a href="https://www.facebook.com/facu.kamikase.7"><i class="fab fa-facebook"></i></a>
-               </div>
-            </div>
-         </div>
         </div>
-      </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-</body>
+    </footer>
+    <!--links de javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    
+  </body>
 </html>
